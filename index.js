@@ -61,14 +61,15 @@ console.log(answer)
 let firstNum = 0;
 let secondNum = 1;
 let i = firstNum + secondNum
-
+let answer4=[firstNum , secondNum]
 for(i; i< 1000000; i = firstNum + secondNum) {
     firstNum = secondNum  ;
     secondNum = i;
     // console.log("fibonnaci", i)
-  
+  answer4.push(i)
 }
 console.log("fibonnaci", i)
+console.log(answer4)
 
 // // 5. Remove the Negative
 
@@ -83,6 +84,75 @@ console.log("fibonnaci", i)
 // }
 // console.log(answer5)
 
+// let names5= ['Man', 'I','Love','The','Matrix','Program'];
+
+// let star ="";
+// for (let i = 0; i < names5.length; i++) {
+   
+//     if(names5[i]==="Program"){
+
+//         console.log(names5[i].length);
+
+// //         for (let j = 0; j <  names5[i].length; j++) {
+// //             star+="*";
+// //             console.log("*");
+// //         }
+
+// //         names5[i]=star;
+// //     }
+// // }
+
+// console.log(names5);
 
 
 
+
+// function replaceString(aString){
+//     let result='';
+//     for (let i=0;i<aString.length;i++){
+//         result+='*';
+//     }
+    
+//     return result;
+// }
+
+// let X = ['Man', 'I','Love','The','Matrix','Program'];
+// let idx=X.indexOf('Program');
+// console.log(idx);
+// X[idx]=replaceString(X[idx]);
+// console.log(X);let stringCharacter = ['Man', 'I','Love','The','Matrix','Program'];
+// let star ="";
+
+// function wordselector(wordsel){
+//     for (let i = 0; i < stringCharacter.length; i++) {
+   
+//         if(stringCharacter[i] === wordsel){
+    
+//             console.log(stringCharacter[i].length);
+    
+//             for (let j = 0; j <  stringCharacter[i].length; j++) {
+//                 star+="*";
+//                 console.log("*");
+//             }   
+//             stringCharacter[i]=star;
+//             console.log(stringCharacter);
+//         }
+//     }
+// }
+// wordselector("The")
+
+
+
+// 6. Communist Censorship
+
+// Given the array of strings x = ['Man', 'I','Love','The','Matrix','Program'], replace every letter of the word Program with *, so the output would be ['Man', 'I','Love','The','Matrix','*******']. Then make your algorithm work for any word of your choice
+
+let x6= ['Man', 'I','Love','The','Matrix','Program'];
+let g ="Program";
+let a = "*";
+for(let i=0;i<x6.length;i++){
+    if(x6[i] === g){
+        x6[i]=a.repeat(g.length)
+    } 
+} 
+console.log("problem 6", x6)
